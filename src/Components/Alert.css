@@ -1,0 +1,46 @@
+.alert {
+  padding: 1rem;
+  margin: 1rem 0;
+  opacity: 0.9;
+  background: var(--light-color);
+  color: #333;
+}
+.alert-light {
+  background: var(--light-color);
+  color: #333;
+}
+.alert-danger {
+  background: var(--danger-color);
+  color: #fff;
+}
+.alert-success {
+  background: var(--success-color);
+  color: #fff;
+}
+.alert-white {
+  background: #fff;
+  color: #333;
+  border: #ccc solid 1px;
+}
+.alat {
+  position: fixed;
+  top: -50px;
+  right: 30px;
+  height: 50px;
+  width: fit-content;
+  border-radius: 15px;
+  opacity: 0.8;
+  background-color: red;
+  transform: translateY(65px);
+  z-index: 4;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation: fadeIn 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+@keyframes fadeIn {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(65px);
+  }
+}

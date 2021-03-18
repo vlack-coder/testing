@@ -1,0 +1,61 @@
+.acdsec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+.acontain {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.acwrap {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.acdrop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-bottom: 10px;
+  height: 500px;
+}
+
+.accord {
+  width: 700px;
+}
+.acb {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.337);
+  margin-bottom: 10px;
+}
+.stret{
+  display: flex;
+  justify-content: space-between;
+  /* font-weight: 500; */
+  color: rgba(255, 255, 255, 0.987);
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-size: 12.5px;
+}
+.cli{
+  color: #811aff;
+}
+.heder{
+  color: white;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+.lins{
+  width: 600px;
+  height: 400px;
+}

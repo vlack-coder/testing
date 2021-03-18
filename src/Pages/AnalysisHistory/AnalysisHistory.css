@@ -1,0 +1,217 @@
+.ahcontainer {
+  /* background-color: antiquewhite; */
+  margin: 100px 60px 10px 60px;
+  height: 100%;
+  color: white;
+  padding-right: 30px;
+  position: relative;
+}
+.ahtitle {
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 0.095em;
+  margin-bottom: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.table {
+  /* border-spacing: 0px; */
+  /* border-collapse: collapse; */
+  /* display: block; */
+  /* table-layout: fixed; */
+  width: 100%;
+  /* white-space: nowrap; */
+  color: white;
+  table-layout: fixed;
+}
+th,
+td {
+  padding: 5px 15px 20px 0px;
+  /* border: 1px solid rgb(177, 31, 31); */
+  /* font-weight: bold; */
+  font-size: 12px;
+  letter-spacing: 0.095em;
+  /* font-weight: 500; */
+  width: 100%;
+  text-align: left;
+  overflow: hidden;
+  max-width: 1400444px;
+  line-height: 23.44px;
+  font-style: normal;
+  word-wrap:break-word;
+}
+.ter {
+  margin-bottom: 130px;
+}
+th {
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+.sl {
+  border: 1px solid white;
+  padding: 3px 7px;
+  width: 110px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 8.5px;
+  border-radius: 3px;
+  /* border-radius: 8px; */
+}
+.ahbutton {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  font-size: 13px;
+  color: white;
+  /* border: 1px solid purple; */
+  border-radius: 13px;
+  padding: 12px 18px;
+  background: #811aff;
+  cursor: pointer;
+}
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  transition: opacity 500ms ease-in-out;
+  opacity: 0;
+}
+.mheading {
+  color: #404040ee;
+  margin-bottom: 10px;
+  /* font-family: normal; */
+  font-weight: 600;
+  font-size: 19px;
+  /* font-family: Airbnb Cereal App; */
+  /* font-style: normal; */
+  font-weight: 600;
+  /* line-height: 23px; */
+  letter-spacing: 0em;
+  text-align: left;
+}
+.mtext {
+  color: #4d4d4dd4;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.label {
+  display: block;
+  margin-bottom: 6px;
+  color: #857f7f;
+  font-size: 12px;
+}
+
+.minput {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+.file-input label {
+  position: relative;
+  width: 50px;
+  cursor: pointer;
+}
+.upv {
+  display: flex;
+  /* justify-content: space-between; */
+  /* width: 200px; */
+  height: 38px;
+  font-size: 12px;
+}
+.uploadvid {
+  border: 1px solid #4d4d4d;
+  padding: 10px 13px;
+  /* background-color: transparent; */
+  background: #f3f6f9;
+  background: #d2d7db4b;
+  border-radius: 3px 0px 0px 3px;
+  outline: none;
+  border: none;
+  color: #5e5e5e;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 180px;
+}
+.browz {
+  border: 1px solid #4d4d4d;
+  padding: 10px 13px;
+  background: #5e5e5e;
+  color: white;
+  border-radius: 0px 3px 3px 0px;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  font-size: 10px;
+}
+.mhbutton {
+  position: absolute;
+  bottom: 35px;
+  right: 50px;
+  font-size: 14px;
+  color: white;
+  /* border: 1px solid purple; */
+  border-radius: 20px;
+  padding: 10px 15px;
+  background: #811aff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* width: 125px; */
+  /* height: 33px; */
+  font-weight: bold;
+}
+/* .mhbutton svg {
+  margin-right: 4px;
+} */
+.mdalcont {
+  padding: 9px 11px;
+}
+.hbutcon {
+  font-size: 1px;
+  margin-left: 3px;
+}
+.loding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+}
+.filp {
+  height: 10px;
+  width: 20px;
+  display: flex;
+  margin-right: 100px;
+  position: relative;
+  margin-bottom: 8px;
+}
+.flname {
+  font-size: 12px;
+  margin-right: 7px;
+  /* position: absolute;
+  top: -18px;
+  left: 0px; */
+}
+.imgprv {
+  height: 40px;
+  width: 10px;
+}
+.mform {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

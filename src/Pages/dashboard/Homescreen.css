@@ -1,0 +1,48 @@
+
+.app__body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  margin: 0px auto;
+  max-width: 2560px;
+  color: black;
+}
+
+.homescreen {
+  /* background-color: var(--second-color); */
+  background-color:lightgray;
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  flex: 1 0;
+  color: black;
+  flex-basis: calc(100% - 250px);
+  display: flex;
+  /* margin: 0px auto; */
+  flex-direction: column;
+  overflow-x: auto;
+  min-height: 100vh;
+  position: relative;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.homescreen::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.homescreen {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.username {
+  position: absolute;
+  top: 30px;
+  right: 60px;
+  border-radius: 15px;
+  border: solid 2px rgb(255, 17, 0);
+  background-color: rgba(255, 17, 0, 0.705);
+  color: white;
+  font-weight: 700;
+  padding: 9px 20px;
+}
+.username h1 {
+  font-size: 15px;
+}

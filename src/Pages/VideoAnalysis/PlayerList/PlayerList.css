@@ -1,0 +1,90 @@
+.pldisp {
+  margin-bottom: 50px;
+  padding-bottom: 60px;
+}
+.plgridd {
+  margin-bottom: 50px;
+  display: flex;
+  margin-bottom: 60px;
+  width: 100%;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.team {
+  /* padding: 10px 15px; */
+  border: 1px solid rgba(255, 255, 255, 0.267);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 27px;
+  width: 180px;
+  color: white;
+  border-radius: 3px;
+  background-color: rgba(211, 211, 211, 0.068);
+  justify-content: space-between;
+  height: 38px;
+  padding: 3px 10px;
+  font-size: 11px;
+  font-family: normal;
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
+}
+
+.timdld {
+  display: flex;
+  width: 100%;
+  /* border: 1px solid white; */
+  justify-content: space-between;
+}
+@media only screen and (max-width: 1090px) {
+  .plgridd {
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .timdld {
+    width: 100%;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    /* justify-content: space-between; */
+  }
+}
+.dndbtn {
+  border: 1px solid rgba(255, 255, 255, 0.267);
+
+  margin-bottom: 27px;
+  margin-right: 35px;
+  width: 170px;
+  color: white;
+  border-radius: 18px;
+  /* background-color: #a257ff; */
+  background: #811aff;
+  justify-content: space-around;
+  height: 28px;
+  padding: 0px 3px;
+  font-size: 11px;
+  font-family: normal;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  /* text-align: center; */
+}
+.dndbtn h4 {
+  margin-left: -15px;
+}
+.iedit {
+  position: relative;
+  color: rgba(255, 255, 255, 0.623);
+  /* border: 1px solid white; */
+  width: 180px;
+
+}
+.mcedi {
+  position: absolute;
+  right: 7px;
+  top: 9px;
+}

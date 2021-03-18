@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family: Normal, sans-serif; */
+  font-family: AirbnbCerealMedium;
+  /* font-family: medium; */
+  font-style: normal;
+  font-weight: 200;
+}
+body{
+  background-color: #3a3b41;
+}
+@font-face {
+  font-family: "AirbnbCerealMedium";
+  src: local("AirbnbCerealMedium"),
+    url("./fonts/AirbnbCerealMedium.ttf") format("truetype");
+  /* font-weight: normal; */
+}
+/* @font-face {
+  font-family: "AirbnbCerealMedium";
+  src: local("AirbnbCerealMedium"),
+    url("./fonts/AirbnbCerealMedium.ttf") format("truetype");
+  font-weight: normal;
+} */
