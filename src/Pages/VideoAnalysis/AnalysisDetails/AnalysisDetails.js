@@ -83,20 +83,17 @@ function AnalysisDetails() {
   const selectHandler1 = (e) => {
     setInputlabel1(e.target.value);
   };
-  console.log(label1);
   const selectHandler2 = (e) => {
     setInputlabel2(e.target.value);
   };
   useEffect(() => {
     const data = localStorage.getItem("data");
-    console.log("data", data);
     if (data) {
       setTable(JSON.parse(data));
     }
   }, []);
   useEffect(() => {
     localStorage.setItem("data", JSON.stringify(table));
-    console.log("data2", table);
   }, [table]);
 
   // const res = axios.get(url, {});
@@ -111,13 +108,13 @@ function AnalysisDetails() {
         "x-rapidapi-key": "a9f536a685c2a45e106a33407f705620",
       },
     });
-    console.log(response.data.response[0].league.standings);
+    // console.log(response.data.response[0].league.standings);
     setTable(response.data.response[0].league.standings[0]);
     // setTable(response.data);
   };
-  console.log(Array.isArray(table));
-  console.log(table.length);
-  console.log(table);
+  // console.log(Array.isArray(table));
+  // console.log(table.length);
+  // console.log(table);
 
   return (
     <div>

@@ -29,7 +29,6 @@ function authReducer(state = initialState, action) {
       };
     // case REGISTER_SUCCESS:
     case LOGIN_SUCCESS: 
-    console.log(payload.token);
     return {
         ...state,
         user: payload.user,

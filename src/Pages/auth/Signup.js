@@ -36,6 +36,9 @@ function Signup() {
   const handleSubmitt = (e) => {
     e.preventDefault();
     console.log(values);
+    dispatch(
+      register(values.email, values.password, values.username, values.phone)
+    );
 
     // console.log("yeskk");
   };
@@ -51,7 +54,7 @@ function Signup() {
       <div className="form-container">
         <h1 className="img ftba">Futboll</h1>
         {/* <img src={Logo} alt="" className="img" /> */}
-        <form className="form" onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmitt}>
           <h1 className="heading">SIGN UP</h1>
           <div className="form-inputs">
             <input

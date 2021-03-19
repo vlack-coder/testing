@@ -66,7 +66,7 @@ function Login() {
               className="form-input"
               type="password"
               name="password"
-              placeholder="Password - 123456"
+              placeholder="Password - 12345678"
               value={values.password}
               onChange={handleChange}
             />

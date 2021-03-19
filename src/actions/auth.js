@@ -37,14 +37,14 @@ export const register = (email, password, fullname, phone) => async (
   try {
     // var url = "/users/login";
     const uid = uuidv4();
-    var url = "/users/sign_up";
+    var url = "/signup";
     var payload = {};
     let [first_name, last_name, ...rest] = fullname.split(" ");
     payload["email"] = email;
     payload["password"] = password;
-    payload["firstName"] = first_name;
-    payload["lastName"] = last_name;
-    payload["phone"] = phone;
+    // payload["firstName"] = first_name;
+    // payload["lastName"] = last_name;
+    // payload["phone"] = phone;
     let res = await api.post(url, payload);
     // console.log(res.data.data);
 
@@ -65,23 +65,23 @@ export const register = (email, password, fullname, phone) => async (
 export const login = (email, password) => async (dispatch) => {
   try {
     // var url = "/users/login";
-    var url = "/users/login";
+    var url = "/login";
     var payload = {};
     payload["email"] = email;
     payload["password"] = password;
     let res = await api.post(url, payload);
-    // console.log(res.data);
+    // console.log('res', res.data);
     dispatch({
       type: LOGIN_SUCCESS,
-      payload: { user: res.data.data.user, token: res.data.data.auth_token },
+      payload: { user: res.data.email, token: res.data.token },
     });
-  } catch (err) {
-    // const error = err.message;
-    console.log("err", err);
-    const error = err?.response?.data?.message || "network error";
-    dispatch(setAlert(error, "danger"));
-    // console.log(err);
-    if (err) {
+  } catch (error) {
+    // const error = error.message;
+    // console.log("error", error?.response );
+    const errors = error?.response?.data?.message || "network error";
+    dispatch(setAlert(errors, "danger"));
+    // console.log(error);
+    if (error) {
       dispatch({
         type: LOGIN_FAIL,
       });

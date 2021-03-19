@@ -32,17 +32,9 @@ function Homescreen() {
       // if (!token) store.dispatch({ type: LOGOUT });
     });
   }, []);
-  useEffect(() => {
-    const socket = socketIOClient("http://parallelscore.xyz:5132");
-    socket.on("analyzed video", (data) => {
-      // console.log("data from backend", data);
-      dispatch(getAnalysis(data));
-      // console.log('shshs', data.model_data)
-    });
-  }, []);
+
   
 
-  console.log('hoomie', path)
   const { user } = useSelector((state) => state.auth);
   return (
       <div className="app__body">
@@ -50,7 +42,7 @@ function Homescreen() {
         <div className="homescreen">
           <div className="username">
             {/* Dynamic content for the username */}
-            <h1>{user?.lastName} </h1>
+            <h1>{user} </h1>
           </div>
           <Switch>
             <Route path={"/AnalysisHistory"}>

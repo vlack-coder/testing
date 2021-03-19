@@ -11,7 +11,6 @@ import { logout } from "../../actions/auth";
 function Sidebar() {
   const { url, path } = useRouteMatch();
 const dispatch = useDispatch()
-console.log("url", url);
   const handleLogout = () => {
     dispatch(logout())
   }
